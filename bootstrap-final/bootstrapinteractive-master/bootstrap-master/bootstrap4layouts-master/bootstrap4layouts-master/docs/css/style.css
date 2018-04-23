@@ -1,0 +1,166 @@
+/*
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+*/
+
+/* Override Bootstrap Defaults */
+
+
+.animated { visibility: visible !important; }
+
+.family-sans {
+  font-family: "Century Gothic";
+}
+
+.font-weight-light {
+  font-weight: 100;
+}
+
+
+@media screen and (max-width: 768px) {
+  .site-header .navbar-collapse {
+    background-color: rgba(0,0,0,.5);
+    padding:10px;
+    transition: all .5s ease-out;
+  }
+
+
+.site-header .inbody {
+  background: url (bootstrap/bootstrap4layouts-master/bootstrap4layouts-master/docs/photos/crelax3.jpg);
+}
+
+
+.site-header .animated {
+  -webkit-animation-duration: 1s;
+}
+  
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-image: url(https://crojas5.github.io/bootstrap/bootstrap4layouts-master/bootstrap4layouts-master/docs/photos/crelax3.jpg);
+    background-size: auto;
+    border-radius: .3rem;
+  }
+
+------
+
+.vertical-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#layout-multicolumn {
+  background: #DDD;
+}
+
+#layout-multicolumn .photo-modal {
+  transition: all 300ms ease-in-out;
+}
+
+#layout-multicolumn .photo-modal:hover {
+  transform: scale(1.1) translateY(-3px) ;
+}
+
+#layout-multicolumn .title {
+  font-size: .9em;
+}
+
+#layout-nested {
+  background: linear-gradient(135deg, #888, #222);
+}
+
+
+#layout-icons .icon {
+  font-size: 3rem;
+  color: #666;
+}
+
+#layout-float {
+  background: radial-gradient(ellipse at left, #585858 0, #232323 100%);
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+#layout-carousel .fade {
+  opacity: 1;
+  position: relative;
+}
+
+#layout-carousel .fade .carousel-item {
+  background: linear-gradient(rgba(0, 0, 0, .50) 50px, transparent),
+  url(https://dummyimage.com/16:9x400/6.png&text=+);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeout 1s;
+}
+
+#layout-carousel .fade .carousel-item:first-child {
+  top: 0;
+  opacity: 1;
+  position: relative;
+}
+
+#layout-carousel .fade .carousel-item.active {
+  animation-delay: 0;
+  animation: fadein 1s;
+  opacity: 1;
+}
+
+#layout-carousel .fade .carousel-indicators {
+  opacity: 0;
+}
+
+#layout-carousel .fade .carousel-control-prev,
+#layout-carousel .fade .carousel-control-next {
+  opacity: 0;
+}
+
+@media screen and (min-width: 992px) {
+  #layout-float {
+    margin: 50px 0 150px 0;
+  }
+
+  #layout-float .img-container {
+    position: relative;
+  }
+
+  #layout-float .img-special {
+    position: absolute;
+  }
+
+  #layout-float img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+}
+
+.footer {
+  background: #2D8BCF;
+}
+
+.footer a {
+  font-size: 2rem;
+}
+
+
+.footer a:first-of-type:hover {
+  color: green;
+}
+
+.footer p::first-letter {
+  color: #8AC8E1;
+  font-size: 200%;
+}
